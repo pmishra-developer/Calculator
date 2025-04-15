@@ -1,3 +1,5 @@
+using CalculatorApi.Services;
+
 namespace CalculatorApi;
 
 public class Program
@@ -11,6 +13,7 @@ public class Program
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddScoped<ICalculatorService, CalculatorService>();
         builder.Services.AddSwaggerGen();
 
         var app = builder.Build();
