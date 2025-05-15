@@ -2,14 +2,14 @@
 {
     public interface ICalculatorService
     {
-        int AddNumbers(params int[] numbers);
-        int SubtractNumbers(params int[] numbers);
-        int MultiplyNumbers(params int[] numbers);
-        double DivideNumbers(params int[] numbers);
-        double SquareRoot(int number);
-        double Power(int number, int power);
-        long Factorial(int number);
-        double Percentage(int number, int total);
-        double Modulus(int number, int divisor);
+        double AddNumbers(params double[] numbers);
+        double SubtractNumbers(params double[] numbers);
+        double MultiplyNumbers(params double[] numbers);
+        double DivideNumbers(params double[] numbers);
+        //double SquareRoot(int number);
+        //double Power(int number, int power);
+        //long Factorial(int number);
+        //double Percentage(int number, int total);
+        //double Modulus(int number, int divisor);
     }
 }
